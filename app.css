@@ -1,0 +1,83 @@
+body{
+    background-color:#ffd9e5;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Styles for Navbar */
+
+#mainNavbar .navbar-brand{
+    color:#EA1C2C;
+    font-weight: 300;
+    font-size: 2rem;
+    /* font-family: "Martian Mono", monospace; */
+    letter-spacing: 2px;
+    padding:0;
+    padding-left: 1rem;
+}
+
+.navbar.scrolled{
+    background-color: rgba(176, 175, 175, 0.653);
+    transition: background-color 500ms;
+}
+
+#mainNavbar .nav-link{
+    color:white;
+    font-weight:100;
+    font-size: 1.5rem;
+    
+}
+#mainNavbar .nav-link:hover{
+    color:#EA1C2C;
+}
+
+
+
+
+/* Styles for Header Image*/
+#headingGroup h1{
+    font-weight:400;
+    font-size: 3rem;
+    color:#EA1C2C;
+}
+
+#headingGroup .card-text{
+    color: #fc91a3;
+    font-weight:100;
+    font-size:2.5rem;
+}
+
+/* Gallery */
+.gallery{
+    margin-top: 50px;
+}
+/* @media (width:768px) {
+    .gallery{
+        width:20%;
+        margin-top: 50px;
+    }
+} */
+
+
+/* Styles for Body */
+.fruit{
+    color:#EA1C2C;
+    font-weight:100;
+    font-size:2.5rem;
+    margin-bottom: 20px;
+}
+.lead{
+    color: #fc91a3;
+    font-size:1.125rem;
+    font-weight:100;
+    line-height:2;
+}
+.grow{
+    transition: transform 0.3s ease;   
+}
+.grow:hover{
+    transform: scale(1.05);
+}
+.section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
