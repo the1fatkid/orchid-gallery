@@ -1,6 +1,7 @@
 body{
     background-color:#ffd9e5;
     font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
 }
 
 /* Styles for Navbar */
@@ -50,13 +51,6 @@ body{
 .gallery{
     margin-top: 50px;
 }
-/* @media (width:768px) {
-    .gallery{
-        width:20%;
-        margin-top: 50px;
-    }
-} */
-
 
 /* Styles for Body */
 .fruit{

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orchid</title>
+    <link rel="icon" href="imgs/blueberries-icon.png">
+    <title>Orchard Gallery</title>
 
     <!-- Google Fonts (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,37 +19,12 @@
 
 </head>
 
-<!--
-  
-    INSTRUCTIONS TO MAKE THE WEBSITE 
-
-    background-color : #f5d9df;
-    heading color : #EA1C2C;
-    para text color : #f498b8;
-
-    font-sizes: I figured them out in rems by trial and error
-
-
-    --Header--
-    1. hand2.png disappers on screen size <=lg
-    2. h2 headings' font size decreases on screen size <=1200px
-
-    --Body--
-    1. Images and text stack up on screen size <=md
-
-      --Text--
-      1. The distribution of space between 3 cols is 1:10:1 for screen size <=lg and 2:8:2 for screen size >=lg
-      2. The text container has a bottom margin of 5 till the screen size <=md
-      3. "lolli_icon.png" disappers on screen size <=lg
-
--->
-
 <body>
 
     <!-- Navbar -->
   <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 px-3 fixed-top ">
     
-    <a href="#" class="navbar-brand ">ORCHID <span></span></a>
+    <a href="#" class="navbar-brand ">ORCHARD<span></span></a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -228,18 +204,22 @@
   </div>
     
     <!-- Scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   \
     <!-- Custom script -->
     <script>
-        $(document).ready(function () {
-            $(document).scroll(function () {
-                var $nav = $("#mainNavbar");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("scroll", function () {
+          var nav = document.getElementById("mainNavbar");
+          if (window.scrollY > nav.offsetHeight) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
         });
+      });
     </script>
+   
+
 </body>
 </html>
